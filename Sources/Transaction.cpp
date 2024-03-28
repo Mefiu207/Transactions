@@ -1,6 +1,6 @@
 #include "..\Headers\Transaction.hpp"
 
-Transaction::Transaction(bool Type, double Amount, std::string Name, enum Justified Rating) : transaction_type(Type), amount(Amount), name(Name), rating(Rating) {}
+Transaction::Transaction(bool Type, double Amount, std::string Name, enum Justified Rating, std::string Date) : transaction_type(Type), amount(Amount), name(Name), rating(Rating), date(Date) {}
 
 std::ostream& operator<<(std::ostream& str, Transaction& obj)
 {

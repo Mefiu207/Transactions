@@ -12,13 +12,13 @@ enum Justified
 };
 
 
-//class for transaction
+//Class represents one transaction 
 class Transaction
 {
 public:
 
 	//Basic constructor
-	Transaction(bool Type, double Amount, std::string Name, enum Justified Rating);
+	Transaction(bool Type, double Amount, std::string Name, enum Justified Rating, std::string Date);
 
 	//Ostrem operator
 	friend std::ostream& operator<<(std::ostream& str, Transaction& obj);
@@ -36,5 +36,8 @@ private:
 
 	//Transaction necesity
 	enum Justified rating;
+
+	//Date of the transaction
+	std::string date;
 
 };

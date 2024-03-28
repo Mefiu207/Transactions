@@ -2,6 +2,10 @@
 #include <vector>
 #include "Transaction.hpp"
 
+
+//This class keeps the history of all the transactions with card and bills
+//  and it also keeps track of the transactions raiting in order to show the potenial
+// for improvement down the line 
 class History
 {
 public:
@@ -25,5 +29,9 @@ private:
 
 	//History of all the transactions;
 	std::vector<Transaction> All_transactions;
+
+	//Raiting sum
+	int score
+
 
 };
